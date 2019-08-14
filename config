@@ -1,0 +1,30 @@
+class Config:
+    pass
+
+config = Config()
+config.feat_channels = [0, 0, 512, 768, 1024]
+config.out_channel = 256
+config.use_p5 = True
+config.n_class = 80
+config.n_conv = 4
+config.prior = 0.01
+config.threshold = 0.05
+config.top_n = 1000
+config.nms_threshold = 0.6
+config.post_top_n = 100
+config.min_size = 0
+config.fpn_strides = [8, 16, 32, 64, 128]
+config.gamma = 2.0
+config.alpha = 0.25
+config.sizes = [[-1, 64], [64, 128], [128, 256], [256, 512], [512, 100000000]]
+config.train_min_size_range = (-1, -1)
+config.train_min_size = (800,)
+config.train_max_size = 1333
+config.test_min_size = 800
+config.test_max_size = 1333
+config.pixel_mean = [0.40789654, 0.44719302, 0.47026115]
+config.pixel_std = [0.28863828, 0.27408164, 0.27809835]
+config.size_divisible = 32
+config.center_sample = True
+config.pos_radius = 1.5
+config.loc_loss_type = 'giou'
